@@ -5,6 +5,9 @@ description: >-
 baseurl: "" # the subpath of your site, e.g. /blog
 url: "https://krsc.amk.land"
 github_username:  kkonopko
+mastodon:
+ - username: kris
+   instance: mas.to
 
 # Build settings
 markdown: kramdown
