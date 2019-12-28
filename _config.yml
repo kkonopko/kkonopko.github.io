@@ -1,8 +1,7 @@
 title: kriscience
 email: kris@amk.zone
 description: >-
-  I share my experience and a pragmatic approach to software development.  Also
-  keep this a set of notes for myself.
+  Sharing experience and a pragmatic approach to software development.
 baseurl: "" # the subpath of your site, e.g. /blog
 url: "https://krsc.amk.land"
 github_username:  kkonopko
