@@ -17,3 +17,8 @@ see something dumb here.  I'm always keen to learn!
 
 #### PGP
 [3BC7E32ED2C51A57](/publickey.txt)
+
+#### License
+The content for this site is
+[CC-BY-SA](https://creativecommons.org/licenses/by-sa/2.0/). The code for this
+site is [MIT](https://opensource.org/licenses/MIT).
