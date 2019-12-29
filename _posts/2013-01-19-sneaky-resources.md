@@ -4,8 +4,6 @@ title: Sneaky resources
 date: 2013-01-19 15:45
 ---
 
-## What's the fuss all about?
-
 Every so often an application has to deal with some sort of resources. There's
 been plenty of books and articles written about it and they are all useful. They
 even attempt to go beyond managing memory as this is only one of many
@@ -13,6 +11,8 @@ resources. The resources often mentioned are network connections, database
 connections, file system objects and the like. Not only the application has to
 release them when it's done with them but also has to ensure that they are not
 held when errors occur and a different execution path is taken.
+
+## What's the fuss all about?
 
 In C++ error conditions are very often signalled by throwing an exception which
 automatically unwinds the call stack. This is very handy if one knows how to

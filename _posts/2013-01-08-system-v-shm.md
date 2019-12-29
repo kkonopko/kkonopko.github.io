@@ -4,6 +4,16 @@ title: System V shared memory fun
 date: 2013-01-08 22:58
 ---
 
+One of the reasons I mention it here is a nostalgia as my first exposure to
+parallel programming in the academia was with the use of processes and System
+V. If you're too cool for old skool, better start with threads instead. The very
+first *nix system I ever used was FreeBSD. The very first *nix system I happened
+to use in my professional career was Solaris. And I still use hjkl to move
+around in vi since once I was given access to a Solaris server terminal with no
+arrow keys on the keyboard and vi being the only editor available on the system
+(visiting a large IT company in Asia as a support engineer). For these and other
+reason I'm probably becoming an old grumpy man.
+
 ## Why, oh why?
 
 Let me begin with a disclaimer that if you ever have a chance to deal with
@@ -15,16 +25,6 @@ spinning strategies. System V shared memory
 ([shmget](http://man7.org/linux/man-pages/man2/shmget.2.html)(2),
 [shmop](http://man7.org/linux/man-pages/man2/shmat.2.html)(2), etc.) on the
 other hand is an old skool toolkit.
-
-One of the reasons I mention it here is a nostalgia as my first exposure to
-parallel programming in the academia was with the use of processes and System
-V. If you're too cool for old skool, better start with threads instead. The very
-first *nix system I ever used was FreeBSD. The very first *nix system I happened
-to use in my professional career was Solaris. And I still use hjkl to move
-around in vi since once I was given access to a Solaris server terminal with no
-arrow keys on the keyboard and vi being the only editor available on the system
-(visiting a large IT company in Asia as a support engineer). For these and other
-reason I'm probably becoming an old grumpy man.
 
 Nostalgia is of course not a good enough reason to mention System V shared
 memory. In fact I'm not that old and my career is less than ten years but I've

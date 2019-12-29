@@ -4,8 +4,6 @@ title: Reading standard input from GMainLoop
 date: 2012-12-16 15:48
 ---
 
-## The challenge
-
 This time I stumbled upon a challenge: integrate handling of the standard input
 data (a very primitive user interaction) with the
 [`GMainLoop`](http://developer.gnome.org/glib/stable/glib-The-Main-Event-Loop.html#GMainLoop). I
@@ -18,6 +16,8 @@ approach: don't touch it if you don't need it. Of course all small pieces of
 knowledge amass and at some point it's worth to read the manual in depth to line
 up with what's been learned and fill the gaps (these are quite likely huge
 gaps).
+
+## The challenge
 
 My real reason for handling user input in the `GMainLoop` was interacting with a
 [GStreamer](http://gstreamer.freedesktop.org/) pipeline. This hopefully makes

@@ -4,14 +4,14 @@ title: Verifying signatures with OpenSSL API
 date: 2013-04-13 20:19
 ---
 
-## A brief introduction
-
 This is another article where I try to tame OpenSSL API using C++11. This time
 round I describe a small example showing how to verify signed data
 programatically. There are many message formats catering for different needs. In
 this example I show how to verify that the data is not tampered and is sent from
 a party identified by a PKI certificate. Please refer to my other article to
 learn how to verify a certificate.
+
+## A brief introduction
 
 Again I want to emphasize that you should not implement this functionality as
 you can use `openssl` tool:

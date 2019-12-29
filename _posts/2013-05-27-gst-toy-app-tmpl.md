@@ -4,15 +4,16 @@ title: GStreamer toy application template
 date: 2013-05-27 21:28
 ---
 
-## Rationale
-
 This time I'd like to share some piece of code I find very useful when
 experimenting with [GStreamer](http://gstreamer.freedesktop.org/). This includes
 writing some small tests to understand some features and all sort of debugging
-of specific cases after distilling them from larger applications. The thing is
-that I don't want to start over and over again with the common stuff whenever I
-want to quickly hack a GStreamer application. This is mostly about writing the
-`main()` function and some bits and pieces:
+of specific cases after distilling them from larger applications.
+
+## Rationale
+
+The thing is that I don't want to start over and over again with the common
+stuff whenever I want to quickly hack a GStreamer application. This is mostly
+about writing the `main()` function and some bits and pieces:
 
 * parse command line options
 * initialise GStreamer

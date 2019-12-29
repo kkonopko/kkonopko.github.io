@@ -4,20 +4,23 @@ title: C14N for signed XML
 date: 2013-05-08 23:29
 ---
 
-## Confession
-
 Here's another, somewhat exotic subject which is
 [canonicalisation](https://en.wikipedia.org/wiki/Canonicalization), quite often
 abbreviated C14N. No, this has nothing to do with the pope and saints. This is
-about getting the canonical form of an XML file. Why? Well, XML is pretty
-ambiguous format where there's a lot of white space characters (for poor human
-readability), no strict element ordering or implicit namespaces. So what? This
-means that for a dumb machine two identically looking XML files may be very
-different. An extreme example would be a terminating new line character which is
-very difficult to spot. So what? Sometimes you want to find out if two XML files
-are identical. Or even more—whether anyone has tampered with it and whether it's
-been sent by someone you expect if it's transferred over the internet. This all
-leads to a state of the art, 21st century invention—[signed XML or XMLDSig](https://en.wikipedia.org/wiki/XML_Signature).
+about getting the canonical form of an XML file.
+
+## Confession
+
+Why? Well, XML is pretty ambiguous format where there's a lot of white space
+characters (for poor human readability), no strict element ordering or implicit
+namespaces. So what? This means that for a dumb machine two identically looking
+XML files may be very different. An extreme example would be a terminating new
+line character which is very difficult to spot. So what? Sometimes you want to
+find out if two XML files are identical. Or even more—whether anyone has
+tampered with it and whether it's been sent by someone you expect if it's
+transferred over the internet. This all leads to a state of the art, 21st
+century invention—[signed XML or
+XMLDSig](https://en.wikipedia.org/wiki/XML_Signature).
 
 XML files are not perfect but some people love them. This is not going to be an
 overview of this format as this is a very broad topic and I'm not eligible to

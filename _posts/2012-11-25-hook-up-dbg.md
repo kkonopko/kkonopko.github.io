@@ -6,7 +6,6 @@ date: 2012-11-25 18:11
 
 Usually debugging an application is straight forward: fire it up with a
 debugger. Even if the application requires some context (environment variables,
-
 specific directory, arguments etc.), it's not that difficult as either it's
 scriptable or the IDE will offer a plethora of options.
 
