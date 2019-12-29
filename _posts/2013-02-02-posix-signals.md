@@ -1,5 +1,5 @@
 ---
-layout: post
+layout: my-post
 title: Handling POSIX signals
 date: 2013-02-02 16:50
 ---
@@ -175,8 +175,3 @@ Quite interesting analysis of the problem:
 
 An interesting option if you happen to use GLib:
 [`g_unix_signal_add()`](http://developer.gnome.org/glib/stable/glib-UNIX-specific-utilities-and-integration.html#g-unix-signal-add)
-
-{% capture subject %}
-{{ page.title }}
-{% endcapture %}
-{% include comments.html title=subject %}

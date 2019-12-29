@@ -1,5 +1,5 @@
 ---
-layout: post
+layout: my-post
 title: GStreamer toy application template
 date: 2013-05-27 21:28
 ---
@@ -89,8 +89,3 @@ Got event: eos
 {% endhighlight %}
 
 _Voilà_! Enjoy!
-
-{% capture subject %}
-{{ page.title }}
-{% endcapture %}
-{% include comments.html title=subject %}

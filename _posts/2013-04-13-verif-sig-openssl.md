@@ -1,5 +1,5 @@
 ---
-layout: post
+layout: my-post
 title: Verifying signatures with OpenSSL API
 date: 2013-04-13 20:19
 ---
@@ -123,8 +123,3 @@ future incarnations once I've got examples in my [repository](https://github.com
 {% endhighlight %}
 
 Happy verifying!
-
-{% capture subject %}
-{{ page.title }}
-{% endcapture %}
-{% include comments.html title=subject %}

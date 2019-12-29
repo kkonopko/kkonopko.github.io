@@ -1,5 +1,5 @@
 ---
-layout: post
+layout: my-post
 title: Reading standard input from GMainLoop
 date: 2012-12-16 15:48
 ---
@@ -214,8 +214,3 @@ q
 Note that at the time of this writing I'm using Fedora 17 and I have
 GStreamer-1.0 built from the sources and installed in a custom location. My
 `PKG_CONFIG_PATH` is set accordingly to reflect that.
-
-{% capture subject %}
-{{ page.title }}
-{% endcapture %}
-{% include comments.html title=subject %}

@@ -1,5 +1,5 @@
 ---
-layout: post
+layout: my-post
 title: Hook up a debugger to a stubborn application
 date: 2012-11-25 18:11
 ---
@@ -146,8 +146,3 @@ variable is possible, all the chaff above can be reduced to
 {% endhighlight %}
 
 Happy debugging!
-
-{% capture subject %}
-{{ page.title }}
-{% endcapture %}
-{% include comments.html title=subject %}

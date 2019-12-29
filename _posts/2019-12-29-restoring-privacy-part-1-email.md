@@ -1,5 +1,5 @@
 ---
-layout: post
+layout: my-post
 title: Restoring privacy (part 1) - Email
 date: 2019-12-29 16:26
 ---
@@ -121,11 +121,6 @@ my emails are simply not looked into.
 
 In the next post I'm planning to share my experience of another fundamental
 issue:  handling passwords.
-
-{% capture subject %}
-{{ page.title }}
-{% endcapture %}
-{% include comments.html title=subject %}
 
 [restore-privacy]: https://restoreprivacy.com/
 [privacy-tools]: https://www.privacytools.io/

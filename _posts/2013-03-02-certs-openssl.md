@@ -1,5 +1,5 @@
 ---
-layout: post
+layout: my-post
 title: Supporting trusted but untrusted certificates with OpenSSL
 date: 2013-03-02 16:19
 ---
@@ -200,8 +200,3 @@ may want to apply this patch:
 ## Notes
 
 A nice OpenSSL PKI tutorial: [https://pki-tutorial.readthedocs.org/en/latest](https://pki-tutorial.readthedocs.org/en/latest)
-
-{% capture subject %}
-{{ page.title }}
-{% endcapture %}
-{% include comments.html title=subject %}
