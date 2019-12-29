@@ -226,3 +226,8 @@ This can be used as follows:
 {% highlight C++ %}
 const unique_ptr<RSA>::type rsa(RSA_new(), RSA_free);
 {% endhighlight %}
+
+{% capture subject %}
+{{ page.title }}
+{% endcapture %}
+{% include comments.html title=subject %}

@@ -356,3 +356,8 @@ A nice reference for all this stuff is here:
 [http://www.tldp.org/LDP/lpg/node21.html](http://www.tldp.org/LDP/lpg/node21.html)
 
 An example of System V constraints: [https://github.com/android/platform_bionic/blob/master/libc/docs/SYSV-IPC.TXT](https://github.com/android/platform_bionic/blob/master/libc/docs/SYSV-IPC.TXT)
+
+{% capture subject %}
+{{ page.title }}
+{% endcapture %}
+{% include comments.html title=subject %}

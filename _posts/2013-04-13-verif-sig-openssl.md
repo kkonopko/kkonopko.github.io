@@ -123,3 +123,8 @@ future incarnations once I've got examples in my [repository](https://github.com
 {% endhighlight %}
 
 Happy verifying!
+
+{% capture subject %}
+{{ page.title }}
+{% endcapture %}
+{% include comments.html title=subject %}

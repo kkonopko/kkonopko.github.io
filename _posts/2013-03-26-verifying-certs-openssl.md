@@ -147,3 +147,8 @@ Verification OK
 This is very trivial example but it's a foothold for someone starting their
 adventure with OpenSSL API. A more representable application would use policy
 verification, time parameter and CRL checks. Maybe one day I'll present it here.
+
+{% capture subject %}
+{{ page.title }}
+{% endcapture %}
+{% include comments.html title=subject %}

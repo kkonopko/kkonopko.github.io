@@ -152,3 +152,8 @@ That's it for now. Enjoy!
 
 [^1]: Actually `Object` is digested and the digest is included in `SignedInfo`
 which itself is digested and signed.
+
+{% capture subject %}
+{{ page.title }}
+{% endcapture %}
+{% include comments.html title=subject %}

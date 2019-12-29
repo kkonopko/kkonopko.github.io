@@ -146,3 +146,8 @@ variable is possible, all the chaff above can be reduced to
 {% endhighlight %}
 
 Happy debugging!
+
+{% capture subject %}
+{{ page.title }}
+{% endcapture %}
+{% include comments.html title=subject %}

@@ -200,3 +200,8 @@ may want to apply this patch:
 ## Notes
 
 A nice OpenSSL PKI tutorial: [https://pki-tutorial.readthedocs.org/en/latest](https://pki-tutorial.readthedocs.org/en/latest)
+
+{% capture subject %}
+{{ page.title }}
+{% endcapture %}
+{% include comments.html title=subject %}

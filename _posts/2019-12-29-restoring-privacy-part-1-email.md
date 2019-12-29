@@ -122,6 +122,11 @@ my emails are simply not looked into.
 In the next post I'm planning to share my experience of another fundamental
 issue:  handling passwords.
 
+{% capture subject %}
+{{ page.title }}
+{% endcapture %}
+{% include comments.html title=subject %}
+
 [restore-privacy]: https://restoreprivacy.com/
 [privacy-tools]: https://www.privacytools.io/
 [migadu]: https://www.migadu.com/en/index.html

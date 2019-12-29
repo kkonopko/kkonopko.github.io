@@ -175,3 +175,8 @@ Quite interesting analysis of the problem:
 
 An interesting option if you happen to use GLib:
 [`g_unix_signal_add()`](http://developer.gnome.org/glib/stable/glib-UNIX-specific-utilities-and-integration.html#g-unix-signal-add)
+
+{% capture subject %}
+{{ page.title }}
+{% endcapture %}
+{% include comments.html title=subject %}
