@@ -58,9 +58,9 @@ to support them, it's easier if they use the same solution.
 
 ## Choices
 
-I'm pretty sure I haven't came across many passwords managers.  Maybe there's
-still one that I missed and which would the best choice for me.  I do not feel
-like I'm done with it.
+I'm pretty sure I haven't come across many passwords managers.  Maybe there's
+still one that I missed and which would be the best choice for me.  I do not
+feel like I'm done with it yet.
 
 I also do not intend to enumerate all password managers I evaluated or read
 about, except for only few of them.  This is also all very subjective.
