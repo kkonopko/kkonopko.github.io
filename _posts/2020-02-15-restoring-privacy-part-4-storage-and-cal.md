@@ -102,3 +102,14 @@ pretty much like a washing machine which is plugged in and that's it.  But even
 with simple appliances, the appetite for IoT and seeing where this is all going
 to, chances are high that the effort required to own data and protect privacy
 will not become lower.
+
+## Updates
+
+### 2020-03-18
+
+Since I screwed up with full-disk encryption in my Nextcloud/FreeNAS
+installation (something failed, the disk stopped accepting the
+password and remained locked after several unclean reboots), I'm back
+on Synology safely kept at home: calendar, WebDAV and pretty much
+everything except for email.  It's a pity it does not support full
+desk encryption but for the time being it's a minor disadvantage.
