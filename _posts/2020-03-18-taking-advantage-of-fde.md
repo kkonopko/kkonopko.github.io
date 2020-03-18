@@ -71,8 +71,8 @@ time I needed this, I used `kexec` which I also found way much convenient.
 I took even a step further, and gave up on any bootloader and instead boot Linux
 directly from UEFI, thanks to the UEFI stub.  These days I'm using Arch Linux
 which by default provides Linux kernels with UEFI stub enabled, so that's even
-easier.  With the EFI partition mounted as `/boot` it also becomes transparent
-for the system updates when it comes to upgrade the Linux kernel.
+easier.  With the EFI partition mounted as `/boot`, it also becomes transparent
+for the system updates when it comes to upgrading the Linux kernel.
 
 ## Installing Arch Linux
 
@@ -96,31 +96,32 @@ gist of it, relevant to my installation.  I skipped all the usual steps.
 ### Optional vconsole locking
 
 Since I don't like to leave my laptop unlocked, and it might take a while to
-download and install packages, I had to:
+download and install packages, I had to the following on the Arch Liux installer
+system:
 
 - set the root password
-  {% highlight terminal %}
-  passwd
-  {% endhighlight %}
+{% highlight terminal %}
+passwd
+{% endhighlight %}
 - create `/etc/pam.d/vlock`
-  {% highlight terminal %}
-  #%PAM-1.0
-  auth required pam_unix.so
-  account required pam_unix.so
-  password required pam_unix.so
-  session required pam_unix.so
-  {% endhighlight %}
+{% highlight terminal %}
+#%PAM-1.0
+auth required pam_unix.so
+account required pam_unix.so
+password required pam_unix.so
+session required pam_unix.so
+{% endhighlight %}
 
-Then I'm able to use `vlock -a` from the other virtual terminal.
+Then I was able to use `vlock -a` from the other virtual terminal.
 
 ### Partitioning
 
-First, list the disks/partitions:
+First, I listed the disks/partitions:
 {% highlight terminal %}
 fdisk -l
 {% endhighlight %}
 
-From this point, I'm assuming these disks:
+From this point, I assumed these disks:
 - `/dev/nvme0n1` - non-OPAL (no FDE)
 - `/dev/nvme1n1` - OPAL (FDE)
 
@@ -154,14 +155,14 @@ n
 w
 {% endhighlight %}
 
-Next step is formatting the partitions:
+Next step was formatting the partitions:
 {% highlight terminal %}
 mkfs.fat -F32 /dev/nvme1n1p1
 mkfs.ext4 /dev/nvme1n1p2
 mkfs.ext4 /dev/nvme1n1p3
 {% endhighlight %}
 
-Mount the "FDE" partitions:
+Mounted the "FDE" partitions:
 {% highlight terminal %}
 mount /dev/nvme1n1p2 /mnt
 mkdir /mnt/{boot,data,etc,home}
@@ -170,7 +171,7 @@ mount /dev/nvme1n1p1 /mnt/boot
 mount /dev/nvme1n1p3 /mnt/data
 {% endhighlight %}
 
-Encrypt the non-OPAL disk:
+The last step was to encrypt the non-OPAL disk:
 {% highlight terminal %}
 dd if=/dev/urandom of=/mnt/etc/home.key bs=4096 count=1
 cryptsetup luksFormat --key-file=/mnt/etc/home.key /dev/nvme0n1p1
@@ -179,7 +180,7 @@ mkfs.ext4 /dev/mapper/home
 mount /dev/mapper/home /mnt/home
 {% endhighlight %}
 
-What follows are typical installation and configuration steps, not so much
+What followed was a typical installation and configuration steps, not so much
 interesting here.  What's important here is to include `efibootmgr` in the list
 of installed packages so it's available in `chroot` environment.
 
