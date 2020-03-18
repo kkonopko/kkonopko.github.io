@@ -16,12 +16,11 @@ recover encrypted data, but I assume I'm not the target.
 
 I do like the idea of self- (always) encrypting drives.  It's very convenient
 and transparent, also with regards to disk I/O performance.  There's nothing
-required to encrypted data, as it is encrypted all the time by default.  The key
-is to only lock the disk when powered off, which typically is enabled by setting
-a password.  This is also convenient for having full-system encryption, which
-typically is not trivial when using software solutions like LUKS (typically the
-boot and possibly system partitions are left not encrypted, mostly for
-simplicity).
+required to encrypt data, as it is encrypted all the time by default.  The key
+is to only lock the disk when powered off, which is enabled by setting a
+password.  This is also convenient for having full-system encryption, which
+typically is not trivial when using software solutions like LUKS (boot and
+possibly system partitions are left not encrypted, mostly for simplicity).
 
 I do have a bad experience with self-encrypting drive which was used as an
 experiment in a self-built FreeNAS box.  FreeNAS offered storing the disk
@@ -216,7 +215,7 @@ new Arch Linux kernel.
 
 ## Summary
 
-This is just yet another option for setting up dist encryption and
+This is just yet another option for setting up disk encryption and
 partitioning.  This seems to work very well for me, and so far is the best I've
 come up with so far.  Far on the horizon might be trying the same with Alpine
 Linux, but for now I stick with Arch Linux.
