@@ -112,4 +112,4 @@ installation (something failed, the disk stopped accepting the
 password and remained locked after several unclean reboots), I'm back
 on Synology safely kept at home: calendar, WebDAV and pretty much
 everything except for email.  It's a pity it does not support full
-desk encryption but for the time being it's a minor disadvantage.
+disk encryption but for the time being it's a minor disadvantage.
