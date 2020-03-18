@@ -12,6 +12,9 @@ if I only know the data stored on it cannot be accessed (easily).  Of course
 with enough effort, expertise and the right equipment, it's likely possible to
 recover encrypted data, but I assume I'm not the target.
 
+I also do not need all the bootloader hurdles along the way and prefer
+simplicity: boot straight into Linux kernel from UEFI, _directly_.
+
 ## Self-encrypting drives
 
 I do like the idea of self- (always) encrypting drives.  It's very convenient
@@ -188,7 +191,7 @@ of installed packages so it's available in `chroot` environment.
 After entering `chroot`-environment, here's how I configured UEFI to boot my new
 Arch Linux installation.
 
-First, I dumped the list of partitions into the file:
+First, I dumped the list of partitions into a file:
 {% highlight terminal %}
 ls -l /dev/disk/by-partuuid/ > cmd.sh
 {% endhighlight %}
@@ -210,7 +213,7 @@ chmod +x cmd.sh
 rm ./cmd.sh
 {% endhighlight %}
 
-And that's it, voilà!  Now the system should reboot straight from UEFI into the
+And that's it, voilà!  Now the system should boot straight from UEFI into the
 new Arch Linux kernel.
 
 ## Summary
